@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/15.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="styles.css">
+
+      <title>Team Rocket Poke - Final Proj</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="Assets\img\trlogofinal.png" alt="" width="50"> Team Rocket Poke
+            </a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="ri-home-line"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#discount" class="nav__link">
+                            <i class="ri-heart-line"></i>
+                            <span>Featured</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">
+                            <i class="ri-gift-line"></i>
+                            <span>Boxes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">
+                            <i class="ri-coins-line"></i>
+                            <span>PokeCoins</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#testimonial" class="nav__link">
+                            <i class="ri-dropbox-line"></i>
+                            <span>Dailies</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Search Button -->
+                <i class="ri-search-line search-button" id="search-button"></i>
+
+                <!-- Login Button -->
+                <i class="ri-user-line" id="login-button"></i>
+
+                <!-- Theme Button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search-content">
+         <form action="" class="search__form">
+            <i class="ri-search-line serach__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+         </form>
+
+         <i class="ri-close-line search__close" id="search-close"></i>
+      </div>
+
+      <!--==================== LOGIN ====================-->
+      <div class="login grid" id="login-content">
+        <form action="" class="login__form grid">
+            <h3 class="login__title">Log In</h3>
+
+            <div class="login__group grid">
+                <div>
+                    <label for="login-email" class="login__label">Email</label>
+                    <input type="email" placeholder="Write your email" id="login-email" class="login__input">
+                </div>
+
+                <div>
+                    <label for="login-pass" class="login__label">Password</label>
+                    <input type="password" placeholder="Enter your password" id="login-pass" class="login__input">
+                </div>
+
+                <div>
+                    <label for="login-id" class="login__label">Player ID</label>
+                    <input type="id" placeholder="Enter Player ID" id="login-id" class="login__input">
+                </div>
+
+                <div>
+                    <label for="login-ign" class="login__label">In-game name</label>
+                    <input type="ign" placeholder="Enter your in-game name" id="login-ign" class="login__input">
+                </div>
+            </div>
+
+            <div>
+                <span class="login__signup">
+                    Don't have an account? <a href="#">Sign up</a>
+                </span>
+
+                <a href="#" class="login__forgot">
+                    Forgot password?
+                </a>
+
+                <button type="submit" class="login__button button">Log In</button>
+            </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Power Up <br>
+                        & Boost Your Pokemon
+                    </h1>
+
+                    <p class="home__description">
+                        15% discount for your first Web Store purchase on any item $9.99 or more!
+                    </p>
+
+                    <a href="#" class="button">Shop Now</a>
+                </div>
+
+                <div class="home__images">
+                    <div class="home__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <article class="home__article swiper-slide">
+                                <img src="Assets/img/Fuzzy-Buddy-Box.png" alt="image" class="home__img">
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <img src="Assets/img/15500-PokeCoins.png" alt="image" class="home__img">
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <img src="Assets/img/Max-Particle-Pack.png" alt="image" class="home__img">
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <img src="Assets/img/Ultra-Ball-Box.png" alt="image" class="home__img">
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+            <div class="services__container container grid">
+                <article class="services__card">
+                    <i class="ri-coins-line"></i>
+                    <h3 class="services__title">Pokecoins Bonuses!</h3>
+                    <p class="services__description">Extra bonus coins ^_^</p>
+                </article>
+
+                <article class="services__card">
+                    <i class="ri-gift-line"></i>
+                    <h3 class="services__title">Exclusive Bundles!</h3>
+                    <p class="services__description">Special item packs and tickets :O</p>
+                </article>
+
+                <article class="services__card">
+                    <i class="ri-vip-diamond-line"></i>
+                    <h3 class="services__title">Reward Program!</h3>
+                    <p class="services__description">Earn points on purchases!!</p>
+                </article>
+            </div>
+         </section>
+
+         <!--==================== FEATURED ====================-->
+         <section class="discount section" id="discount">
+            <div class="discount__container container grid">
+                <div class="discount__data">
+                    <h2 class="discount__title section__title">
+                        Pokémon GO Fest 2025: Global Ticket
+                    </h2>
+
+                    <p class="discount__description">
+                        1xTicket x5Max Revive x5Rare Candy x3Premium Battle Pass
+                    </p>
+
+                    <span class="featured__discount">₱439.00</span>
+
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+
+                <div class="discount__images">
+                    <img src="Assets/img/Boost-Box.png" alt="" class="discount__img-1">
+                </div>
+            </div>
+         </section>
+         <!--==================== ITEM BOXES ====================-->
+         <section class="featured section" id="featured">
+            <h2 class="section__title">
+                Item Boxes
+            </h2>
+
+            <div class="featured__container container">
+                <div class="featured__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/img/Fuzzy-Buddy-Box.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Fuzzy Buddy Research Box</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">₱59.00</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-bookmark-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/img/bug-out.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Bug Out Ultra Ticket Box</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">₱59.00</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-bookmark-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/img/GO-Rocket-Box.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">GO Rocket Box</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">₱289.00</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-bookmark-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/img/Ultra-Raid-Box.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Ultra Raid Box</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">₱149.00</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-bookmark-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/img/Might-and-Mastery-Box.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Might and Mastery Box</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">₱149.00</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-bookmark-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/img/Super-Incubator.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Super Incubator</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">₱88.00</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-bookmark-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/img/Egg-Incubator.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Egg Incubator</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">₱88.00</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-bookmark-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/img/Max-Revive.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Max Revive</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">₱59.00</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-bookmark-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/img/Premium-Battle-Pass.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Premium Battle Pass</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">₱88.00</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-bookmark-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/img/Max-Particle-Pack.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Max Particle Pack x6</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">₱235.00</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-bookmark-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="featured__card swiper-slide">
+                            <img src="Assets/img/Max-Mushroom.png" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Max Mushroom</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">₱289.00</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-bookmark-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== NEW BOOKS ====================-->
+         <section class="new section" id="new">
+            <h2 class="section__title">
+                PokeCoins
+            </h2>
+
+            <div class="new__container container">
+
+                <div class="new__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/img/110-pokecoins.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">110 PokéCoins</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">₱29.00</span>
+                                </div>
+
+                                <button class="button">Add to Cart</button>
+
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/img/600-PokeCoins.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">600 PokéCoins</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">₱149.00</span>
+                                </div>
+
+                                <button class="button">Add to Cart</button>
+
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/img/1300-PokeCoins.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">1,300 PokéCoins</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">₱289.00</span>
+                                </div>
+
+                                <button class="button">Add to Cart</button>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="new__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/img/2700-PokeCoins.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">2,700 PokéCoins</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">₱589.00</span>
+                                </div>
+
+                                <button class="button">Add to Cart</button>
+
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/img/5600-PokeCoins.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">5,600 PokéCoins</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">₱1,170.00</span>
+                                </div>
+
+                                <button class="button">Add to Cart</button>
+
+                            </div>
+                        </a>
+
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="Assets/img/15500-PokeCoins.png" alt="image" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">15,500 PokéCoins</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">₱2,950.00</span>
+                                </div>
+
+                                <button class="button">Add to Cart</button>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== TESTIMONIAL ====================-->
+         <section class="testimonial section" id="testimonial">
+            <h2 class="section__title">
+                Daily Bundles
+            </h2>
+
+            <div class="testimonial__container continer">
+                <div class="testimonial__swiper">
+                    <div>
+                        <article class="testimonial__card">
+                            <img src="Assets/img/daily-bundle.png" alt="image" class="testimonial__img">
+    
+                            <h2 class="testimonial__title">Mystery Boxes</h2>
+                            <p class="testimonial__description">
+                                3 Daily Bundles
+                            </p>
+    
+                            <button class="button" id="signup-button" >Sign in to Claim</button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+         </section>
+      </main>
+         <!--==================== JOIN ====================-->
+         <section class="join section">
+            <div class="join__container">
+                <div class="join__data container grid">
+
+                    <div class="join__logo">
+                        <img src="Assets/img/PokemonGO.png" alt="image" class="join__bg">
+                    </div>
+
+                    <h2 class="join__title section__title">
+                        Get up and GO! <br>
+                        Download Today
+                    </h2>
+
+                <div class="join__buttons">
+                    <a href="#"><img src="Assets/img/app-store-badge.png" alt="image" class="join__button"></a>
+                    <a href="#"><img src="Assets/img/google-play-badge.png" alt="image" class="join__button"></a>
+                    <a href="#"><img src="Assets/img/galaxy-store-badge.png" alt="image" class="join__button"></a>
+                </div>
+                   
+                </div>
+            </div>
+         </section>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    <img src="Assets\img\trlogofinal.png" alt="" width="50"> Team Rocket Poke
+                </a>
+
+                <p class="footer__description">
+                    For educational purposes only and no copyright infringement is intended. All images used is from Niantic.
+                </p>
+            </div>
+
+            <div class="footer__data grid">
+                <div>
+                    <h3 class="footer__title">About</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Awards</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">FAQs</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Privacy Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Terms of Services</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Company</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Blogs</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Community</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Our team</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Help Center</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Members</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <address class="footer__info">
+                                Talapian, Raymond
+                            </address>
+                        </li>
+
+                        <li>
+                            <address class="footer__info">
+                                Valerio, Ianne Eunice
+                            </address>
+                        </li>
+
+                        <li>
+                            <address class="footer__info">
+                                Valmonte, Miguel
+                            </address>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Social</h3>
+
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/PokemonGO/" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/pokemongoapp/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="https://www.tiktok.com/@pokemongo?lang=en" target="_blank" class="footer__social-link">
+                            <i class="ri-tiktok-fill"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/pokemongo" target="_blank" class="footer__social-link">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+         </div>
+
+         <span class="footer__copy">
+            &#169; All Rights Reserved By Bedimcode & Niantic
+         </span>
+
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src=""></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="main.js"></script>
+   </body>
+</html>
