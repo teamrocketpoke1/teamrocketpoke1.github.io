@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/15.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="swiper-bundle.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="styles.css">
+
+   <title>User Profile - Team Rocket Poke</title>
+</head>
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="index.html" class="nav__logo">
+             <img src="Assets\img\trlogofinal.png" alt="" width="50"> Team Rocket Poke
+         </a>
+             <!-- Cart Modal -->
+         <div id="cart-modal" class="cart-modal">
+            <div class="cart-modal-content">
+                <span class="close-cart">&times;</span>
+                <h2>Your Cart (₱)</h2>
+                <ul id="cart-items-list"></ul>
+                <p id="cart-total"></p>
+                <button id="clear-cart">Clear Cart</button>
+            </div>
+         </div>
+
+         <div class="nav__menu">
+             <ul class="nav__list">
+                 <li class="nav__item">
+                     <a href="index.html" class="nav__link">
+                         <i class="ri-home-line"></i>
+                         <span>Home</span>
+                     </a>
+                 </li>
+
+                 <li class="nav__item">
+                     <a href="index.html#discount" class="nav__link">
+                         <i class="ri-heart-line"></i>
+                         <span>Featured</span>
+                     </a>
+                 </li>
+
+                 <li class="nav__item">
+                     <a href="index.html#featured" class="nav__link">
+                         <i class="ri-gift-line"></i>
+                         <span>Boxes</span>
+                     </a>
+                 </li>
+
+                 <li class="nav__item">
+                     <a href="index.html#new" class="nav__link">
+                         <i class="ri-coins-line"></i>
+                         <span>PokeCoins</span>
+                     </a>
+                 </li>
+
+                 <li class="nav__item">
+                     <a href="index.html#testimonial" class="nav__link">
+                         <i class="ri-dropbox-line"></i>
+                         <span>Dailies</span>
+                     </a>
+                 </li>
+             </ul>
+         </div>
+
+         <div class="nav__actions">
+             <!-- Search Button -->
+             <i class="ri-search-line search-button" id="search-button"></i>
+
+             <!-- Login Button -->
+             <i class="ri-user-line" id="login-button"></i>
+
+             <!-- Theme Button -->
+             <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+             <!-- Cart Widget -->
+             <i class="ri-shopping-cart-line" id="cart-widget"></i>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== SEARCH ====================-->
+   <div class="search" id="search-content">
+      <form action="" class="search__form">
+         <i class="ri-search-line serach__icon"></i>
+         <input type="search" placeholder="What are you looking for?" class="search__input">
+      </form>
+
+      <i class="ri-close-line search__close" id="search-close"></i>
+   </div>
+
+   <!--==================== LOGIN ====================-->
+   <div class="login grid" id="login-content">
+     <form action="" class="login__form grid">
+         <h3 class="login__title">Log In</h3>
+
+         <div class="login__group grid">
+             <div>
+                 <label for="login-email" class="login__label">Email</label>
+                 <input type="email" placeholder="Write your email" id="login-email" class="login__input">
+             </div>
+
+             <div>
+                 <label for="login-pass" class="login__label">Password</label>
+                 <input type="password" placeholder="Enter your password" id="login-pass" class="login__input">
+             </div>
+
+             <div>
+                 <label for="login-id" class="login__label">Player ID</label>
+                 <input type="id" placeholder="Enter Player ID" id="login-id" class="login__input">
+             </div>
+
+             <div>
+                 <label for="login-ign" class="login__label">In-game name</label>
+                 <input type="ign" placeholder="Enter your in-game name" id="login-ign" class="login__input">
+             </div>
+         </div>
+
+         <div>
+             <span class="login__signup">
+                 Don't have an account? <a href="#">Sign up</a>
+             </span>
+
+             <a href="#" class="login__forgot">
+                 Forgot password?
+             </a>
+
+             <button type="submit" class="login__button button">Log In</button>
+         </div>
+     </form>
+
+     <i class="ri-close-line login__close" id="login-close"></i>
+   </div>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== PROFILE ====================-->
+      <section class="profile section">
+         <div class="profile__container container grid">
+            <!-- Profile Sidebar -->
+            <div class="profile__sidebar">
+               <div class="profile__card">
+                  <div class="profile__header">
+                     <div class="profile__avatar">
+                        <img src="Assets\img\ash.gif" alt="Profile Avatar" class="profile__img" style="width: 100px; height: 104px;">
+                     </div>
+                     <h2 class="profile__name">Ash Ketchum</h2>
+                     <span class="profile__team">Team Valor</span>
+                  </div>
+                  <div class="profile__info">
+                     <div class="profile__level">
+                        <span class="profile__level-text">Level 42</span>
+                        <span class="profile__level-text">Level 43</span>
+                        <div class="profile__progress">
+                           <div class="profile__progress-bar" style="width: 75%"></div>
+                        </div>
+                     </div>
+                     
+                     <div class="profile__details">
+                        <div class="profile__detail">
+                           <span class="profile__detail-label">Player ID</span>
+                           <span class="profile__detail-value">PKM12345678</span>
+                        </div>
+                        <div class="profile__detail">
+                           <span class="profile__detail-label">Email</span>
+                           <span class="profile__detail-value">ash@pokemon.com</span>
+                        </div>
+                        <div class="profile__detail">
+                           <span class="profile__detail-label">Joined</span>
+                           <span class="profile__detail-value">March 15, 2016</span>
+                        </div>
+                        <div class="profile__detail">
+                           <span class="profile__detail-label">PokéCoins</span>
+                           <span class="profile__detail-value">
+                              <i class="ri-coins-line"></i> 2700
+                           </span>
+                        </div>
+                     </div>
+                     
+                     <div class="profile__actions">
+                        <button class="profile__button">
+                           <i class="ri-edit-line"></i> Edit Profile
+                        </button>
+                        <button class="profile__button">
+                           <i class="ri-bank-card-line"></i> Payment Methods
+                        </button>
+                        <button class="profile__button profile__button-logout">
+                           <i class="ri-logout-box-line"></i> Logout
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+            <!-- Profile Content -->
+            <div class="profile__content">
+               <div class="profile__tabs">
+                  <div class="profile__tabs-header">
+                     <button class="profile__tab-button active" data-tab="overview">Overview</button>
+                     <button class="profile__tab-button" data-tab="purchases">Purchases</button>
+                     <button class="profile__tab-button" data-tab="pokemon">Pokémon</button>
+                  </div>
+                  
+                  <!-- Overview Tab -->
+                  <div class="profile__tab-content active" id="overview">
+                     <div class="profile__card">
+                        <h3 class="profile__card-title">Account Summary</h3>
+                        <div class="profile__summary">
+                           <div class="profile__summary-item">
+                              <i class="ri-vip-crown-line"></i>
+                              <h4>42</h4>
+                              <p>Trainer Level</p>
+                           </div>
+                           <div class="profile__summary-item">
+                              <i class="ri-coins-line"></i>
+                              <h4>2,700</h4>
+                              <p>PokéCoins</p>
+                           </div>
+                           <div class="profile__summary-item">
+                              <i class="ri-time-line"></i>
+                              <h4>9 Years</h4>
+                              <p>Account Age</p>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <div class="profile__card">
+                        <h3 class="profile__card-title">Recent Purchases</h3>
+                        <div class="profile__purchases">
+                           <div class="profile__purchase-item">
+                              <div>
+                                 <h4>Ultra Box</h4>
+                                 <p>2025-03-25</p>
+                              </div>
+                              <div>
+                                 <h4>₱289.00</h4>
+                                 <span class="profile__status">Completed</span>
+                              </div>
+                           </div>
+                           <div class="profile__purchase-item">
+                              <div>
+                                 <h4>2,700 PokéCoins</h4>
+                                 <p>2025-03-20</p>
+                              </div>
+                              <div>
+                                 <h4>₱589.00</h4>
+                                 <span class="profile__status">Completed</span>
+                              </div>
+                           </div>
+                           <button class="profile__button profile__button-outline">View All Purchases</button>
+                        </div>
+                     </div>
+                     
+                     <div class="profile__card">
+                        <h3 class="profile__card-title">Buddy Pokémon</h3>
+                        <div class="profile__buddy">
+                           <div class="profile__buddy-item">
+                              <div class="profile__buddy-avatar">
+                                 <img src="Assets\img\pikachufr.gif" alt="Pikachu">
+                              </div>
+                              <div>
+                                 <h4>Pikachu</h4>
+                                 <p>CP: 1245</p>
+                                 <span class="profile__buddy-status">Best Buddy</span>
+                              </div>
+                           </div>
+                           <button class="profile__button profile__button-outline">View All Pokémon</button>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  <!-- Purchases Tab -->
+                  <div class="profile__tab-content" id="purchases">
+                     <div class="profile__card">
+                        <h3 class="profile__card-title">Purchase History</h3>
+                        <div class="profile__purchases">
+                           <div class="profile__purchase-item">
+                              <div>
+                                 <h4>Ultra Box</h4>
+                                 <p>2025-03-25</p>
+                              </div>
+                              <div>
+                                 <h4>₱289.00</h4>
+                                 <span class="profile__status">Completed</span>
+                              </div>
+                           </div>
+                           <div class="profile__purchase-item">
+                              <div>
+                                 <h4>2,700 PokéCoins</h4>
+                                 <p>2025-03-20</p>
+                              </div>
+                              <div>
+                                 <h4>₱589.00</h4>
+                                 <span class="profile__status">Completed</span>
+                              </div>
+                           </div>
+                           <div class="profile__purchase-item">
+                              <div>
+                                 <h4>GO Fest Ticket</h4>
+                                 <p>2025-03-15</p>
+                              </div>
+                              <div>
+                                 <h4>₱439.00</h4>
+                                 <span class="profile__status">Completed</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  <!-- Pokemon Tab -->
+                  <div class="profile__tab-content" id="pokemon">
+                     <div class="profile__card">
+                        <h3 class="profile__card-title">My Buddy Pokémon</h3>
+                        <div class="profile__buddies">
+                           <div class="profile__buddy-item">
+                              <div class="profile__buddy-avatar">
+                                 <img src="Assets\img\pikachufr.gif" alt="Pikachu">
+                              </div>
+                              <div>
+                                 <h4>Pikachu</h4>
+                                 <p>CP: 1245</p>
+                                 <span class="profile__buddy-status">Best Buddy</span>
+                              </div>
+                           </div>
+                           <div class="profile__buddy-item">
+                              <div class="profile__buddy-avatar">
+                                 <img src="Assets\img\rayquaza.gif" alt="Rayquaza" style="width: 100px;">
+                              </div>
+                              <div>
+                                 <h4>Rayquaza</h4>
+                                 <p>CP: 2856</p>
+                                 <span class="profile__buddy-status">Great Buddy</span>
+                              </div>
+                           </div>
+                           <div class="profile__buddy-item">
+                              <div class="profile__buddy-avatar">
+                                 <img src="Assets\img\mewtwo-sprite.gif" alt="Mewtwo">
+                              </div>
+                              <div>
+                                 <h4>Mewtwo</h4>
+                                 <p>CP: 4021</p>
+                                 <span class="profile__buddy-status">Good Buddy</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <div>
+             <a href="#" class="footer__logo">
+                 <img src="Assets\img\trlogofinal.png" alt="" width="50"> Team Rocket Poke
+             </a>
+
+             <p class="footer__description">
+                 For educational purposes only and no copyright infringement is intended. All images used is from Niantic.
+             </p>
+         </div>
+
+         <div class="footer__data grid">
+             <div>
+                 <h3 class="footer__title">About</h3>
+
+                 <ul class="footer__links">
+                     <li>
+                         <a href="#" class="footer__link">Awards</a>
+                     </li>
+
+                     <li>
+                         <a href="#" class="footer__link">FAQs</a>
+                     </li>
+
+                     <li>
+                         <a href="#" class="footer__link">Privacy Policy</a>
+                     </li>
+
+                     <li>
+                         <a href="#" class="footer__link">Terms of Services</a>
+                     </li>
+                 </ul>
+             </div>
+
+             <div>
+                 <h3 class="footer__title">Company</h3>
+
+                 <ul class="footer__links">
+                     <li>
+                         <a href="#" class="footer__link">Blogs</a>
+                     </li>
+
+                     <li>
+                         <a href="#" class="footer__link">Community</a>
+                     </li>
+
+                     <li>
+                         <a href="#" class="footer__link">Our team</a>
+                     </li>
+
+                     <li>
+                         <a href="#" class="footer__link">Help Center</a>
+                     </li>
+                 </ul>
+             </div>
+
+             <div>
+                 <h3 class="footer__title">Members</h3>
+
+                 <ul class="footer__links">
+                     <li>
+                         <address class="footer__info">
+                             Talapian, Raymond
+                         </address>
+                     </li>
+
+                     <li>
+                         <address class="footer__info">
+                             Valerio, Ianne Eunice
+                         </address>
+                     </li>
+
+                     <li>
+                         <address class="footer__info">
+                             Valmonte, Miguel
+                         </address>
+                     </li>
+                 </ul>
+             </div>
+
+             <div>
+                 <h3 class="footer__title">Social</h3>
+
+                 <div class="footer__social">
+                     <a href="https://www.facebook.com/PokemonGO/" target="_blank" class="footer__social-link">
+                         <i class="ri-facebook-circle-line"></i>
+                     </a>
+
+                     <a href="https://www.instagram.com/pokemongoapp/" target="_blank" class="footer__social-link">
+                         <i class="ri-instagram-line"></i>
+                     </a>
+
+                     <a href="https://www.tiktok.com/@pokemongo?lang=en" target="_blank" class="footer__social-link">
+                         <i class="ri-tiktok-fill"></i>
+                     </a>
+
+                     <a href="https://www.youtube.com/pokemongo" target="_blank" class="footer__social-link">
+                         <i class="ri-youtube-line"></i>
+                     </a>
+                 </div>
+             </div>
+         </div>
+      </div>
+
+      <span class="footer__copy">
+         &#169; All Rights Reserved By Bedimcode & Niantic
+      </span>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+   <a href="#" class="scrollup" id="scroll-up">
+     <i class="ri-arrow-up-line"></i>
+   </a>
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="/placeholder.svg"></script>
+
+   <!--=============== SWIPER JS ===============-->
+   <script src="swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="main.js"></script>
+   
+   <!--=============== PROFILE JS ===============-->
+   <script src="profile.js"></script>
+</body>
+</html>

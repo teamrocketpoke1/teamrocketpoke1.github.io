@@ -25,6 +25,16 @@
             <a href="#" class="nav__logo">
                 <img src="Assets\img\trlogofinal.png" alt="" width="50"> Team Rocket Poke
             </a>
+                <!-- Cart Modal -->
+            <div id="cart-modal" class="cart-modal">
+               <div class="cart-modal-content">
+                   <span class="close-cart">&times;</span>
+                   <h2>Your Cart (₱)</h2>
+                   <ul id="cart-items-list"></ul>
+                   <p id="cart-total"></p>
+                   <button id="clear-cart">Clear Cart</button>
+               </div>
+            </div>
 
             <div class="nav__menu">
                 <ul class="nav__list">
@@ -74,6 +84,11 @@
 
                 <!-- Theme Button -->
                 <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <!-- Cart Widget -->
+                <i class="ri-shopping-cart-line" id="cart-widget"></i>
+
+                <i class="ri-login-box-line" id="real-login"></i>
             </div>
          </nav>
       </header>
@@ -205,7 +220,7 @@
                     </h2>
 
                     <p class="discount__description">
-                        1xTicket x5Max Revive x5Rare Candy x3Premium Battle Pass
+                        1x Ticket 5x Max Revive 5x Rare Candy 3x Premium Battle Pass
                     </p>
 
                     <span class="featured__discount">₱439.00</span>
