@@ -1075,6 +1075,7 @@ body.dark-theme{
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+ 
 }
 
 .cart-modal-content {
@@ -1084,6 +1085,7 @@ body.dark-theme{
   width: 50%;
   border-radius: 10px;
   text-align: center;
+  
 }
 
 .close-cart {
@@ -1095,7 +1097,8 @@ body.dark-theme{
 
 #cart-items-list {
   list-style: none;
-  padding: 0;
+  
+  
 }
 
 .remove-item {
